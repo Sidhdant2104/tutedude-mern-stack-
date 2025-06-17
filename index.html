@@ -56,7 +56,7 @@
     <br>
     <br>
     <br>
-    <table>
+    <table border=""> 
         <caption><h3>PRICING: </h3></caption>
         <thead>
             <tr>
@@ -95,7 +95,7 @@
             </tr>
              <tr>
                 <td>
-                    <Caption></Caption>olour grading
+                    colour grading
                 </td>
                 <td>
                     499/-
@@ -115,10 +115,16 @@
     <br>
     <form>
         Fill up your details: <br>
-        <input type="text" placeholder="type your name"><br>
-        <input type="text" placeholder="type your number"><br>
-        <input type="text" placeholder="type your email id"><br>
-        <input type="submit" value="submit">
+        <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your Email ID" required><br><br>
+
+    <input type="submit" value="Submit">
     </form>
     </main>
     <br>
